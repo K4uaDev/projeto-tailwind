@@ -14,19 +14,19 @@ import DescricaoCard from './components/bodyTemplate/card/DescricaoCard'
 function App() {
   return (
     <>
-      <nav className='flex justify-between px-20 py-5 bg-zinc-950 border-b-gray-500 border-1'>
+      <nav className='flex justify-between px-20 py-5 bg-zinc-950 border-b-gray-500 border-1 '>
         <LogoNav />
         <LinksNav />
       </nav>
-      <section className='bg-zinc-950 flex items-center flex-col justify-center'>
+      <section className='bg-zinc-950 flex items-center flex-col justify-center max-w-7xl m-auto'>
         <TitleBody />
         <ParagBody /> 
         <ButtonBody />  
       </section>
-      <section className="bg-zinc-950 p-15 " >
+      <section className="bg-zinc-950 p-15 max-w-7xl m-auto" >
 
-        <hr className="border-1 border-gray-500 w-full mb-4" />
-        <hr className="border-1 border-gray-500 w-full mb-20" />
+        <hr className="border-1 border-gray-500 w-full mb-4 max-w-7xl m-auto" />
+        <hr className="border-1 border-gray-500 w-full mb-20 max-w-7xl m-auto" />
 
         <div className="grid grid-cols-3 grid-rows-2 gap-4">
           <div className="bg-zinc-900 p-3 col-span-2 rounded-md grid gap-2">   
@@ -54,6 +54,9 @@ function App() {
           </div>
         </div>
       </section>
+      <footer className='border-t-gray-500 border-1 p-4 mt-10'>
+        <h2 className='text-white text-center'>Site criado por: &copy; <a href="https://www.instagram.com/k4ua_dev?igsh=MTJ3MXhkaGgxc3ViaA==">K4ua_Dev</a></h2>
+      </footer>
     </>
   )
 }
